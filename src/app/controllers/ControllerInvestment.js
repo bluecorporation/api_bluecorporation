@@ -1,18 +1,21 @@
 
 const Investments = require("../models/Investments")
+const Balance = require("../models/Balance")
 
 class ControllerInvestment{
 
     async storage(req,res){
         
         try {
-            const investment = await Investments.create(req.body)
+            const investment = await Balance.create(req.body)
             
             if(investment){
                 return res.status(200).json({message:"Sucess"})
             }
 
         } catch (error) {
+
+            console.log(error)
                 
             return res.status(500).json({message:"Opss.. algo deu errado!"})
         }

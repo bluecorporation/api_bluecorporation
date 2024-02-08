@@ -3,6 +3,6 @@ const routes = Router();
 
 const ControllerBalance = require("../controllers/ControllerBalance");
 
-routes.post("/get", (req, res) => ControllerBalance.get(req, res));
+routes.post("/storage", ControllerBalance.storageDeposit);
 
 module.exports = routes;

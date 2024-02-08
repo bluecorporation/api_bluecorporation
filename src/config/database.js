@@ -13,6 +13,18 @@ module.exports = {
   },
 };
 
+// module.exports = {
+//   dialect: "mysql",
+//   host: "localhost",
+//   username: "root",
+//   password: "",
+//   database: "bluecorporation",
+//   port: 3306,
 
-
+//   pool: {
+//     max: 5,
+//     min: 0,
+//     idle: 10000,
+//   },
+// };
 
